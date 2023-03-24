@@ -51,7 +51,7 @@ export default function App() {
     }
     
     if (tenzies) {
-      if (bestStats.bestTime > timer) {
+      if (bestStats.bestTime === 0 || bestStats.bestTime > timer) {
         localStorage.setItem("Best stats", JSON.stringify({
           bestRolls: rollTracker,
           bestTime: timer
